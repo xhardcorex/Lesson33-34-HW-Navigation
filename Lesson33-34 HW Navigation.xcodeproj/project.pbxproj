@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		248DEAED1B84AB30003C5D96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 248DEAEC1B84AB30003C5D96 /* main.m */; };
 		248DEAF01B84AB30003C5D96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 248DEAEF1B84AB30003C5D96 /* AppDelegate.m */; };
-		248DEAF31B84AB30003C5D96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248DEAF21B84AB30003C5D96 /* ViewController.m */; };
 		248DEAF61B84AB30003C5D96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248DEAF41B84AB30003C5D96 /* Main.storyboard */; };
 		248DEAF81B84AB30003C5D96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248DEAF71B84AB30003C5D96 /* Images.xcassets */; };
 		248DEAFB1B84AB30003C5D96 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248DEAF91B84AB30003C5D96 /* LaunchScreen.xib */; };
 		248DEB071B84AB30003C5D96 /* Lesson33_34_HW_NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 248DEB061B84AB30003C5D96 /* Lesson33_34_HW_NavigationTests.m */; };
+		248DEB121B84ACD3003C5D96 /* NSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248DEB111B84ACD3003C5D96 /* NSTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		248DEAEC1B84AB30003C5D96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		248DEAEE1B84AB30003C5D96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		248DEAEF1B84AB30003C5D96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		248DEAF11B84AB30003C5D96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		248DEAF21B84AB30003C5D96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		248DEAF51B84AB30003C5D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		248DEAF71B84AB30003C5D96 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		248DEAFA1B84AB30003C5D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		248DEB001B84AB30003C5D96 /* Lesson33-34 HW NavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lesson33-34 HW NavigationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		248DEB051B84AB30003C5D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		248DEB061B84AB30003C5D96 /* Lesson33_34_HW_NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson33_34_HW_NavigationTests.m; sourceTree = "<group>"; };
+		248DEB101B84ACD3003C5D96 /* NSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTableViewController.h; sourceTree = "<group>"; };
+		248DEB111B84ACD3003C5D96 /* NSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +63,7 @@
 		248DEADE1B84AB30003C5D96 = {
 			isa = PBXGroup;
 			children = (
+				248DEB131B84ACDF003C5D96 /* NS */,
 				248DEAE91B84AB30003C5D96 /* Lesson33-34 HW Navigation */,
 				248DEB031B84AB30003C5D96 /* Lesson33-34 HW NavigationTests */,
 				248DEAE81B84AB30003C5D96 /* Products */,
@@ -83,9 +84,6 @@
 			children = (
 				248DEAEE1B84AB30003C5D96 /* AppDelegate.h */,
 				248DEAEF1B84AB30003C5D96 /* AppDelegate.m */,
-				248DEAF11B84AB30003C5D96 /* ViewController.h */,
-				248DEAF21B84AB30003C5D96 /* ViewController.m */,
-				248DEAF41B84AB30003C5D96 /* Main.storyboard */,
 				248DEAF71B84AB30003C5D96 /* Images.xcassets */,
 				248DEAF91B84AB30003C5D96 /* LaunchScreen.xib */,
 				248DEAEA1B84AB30003C5D96 /* Supporting Files */,
@@ -117,6 +115,16 @@
 				248DEB051B84AB30003C5D96 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		248DEB131B84ACDF003C5D96 /* NS */ = {
+			isa = PBXGroup;
+			children = (
+				248DEB101B84ACD3003C5D96 /* NSTableViewController.h */,
+				248DEB111B84ACD3003C5D96 /* NSTableViewController.m */,
+				248DEAF41B84AB30003C5D96 /* Main.storyboard */,
+			);
+			name = NS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248DEAF31B84AB30003C5D96 /* ViewController.m in Sources */,
+				248DEB121B84ACD3003C5D96 /* NSTableViewController.m in Sources */,
 				248DEAF01B84AB30003C5D96 /* AppDelegate.m in Sources */,
 				248DEAED1B84AB30003C5D96 /* main.m in Sources */,
 			);
@@ -250,6 +258,7 @@
 				248DEAF51B84AB30003C5D96 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "Lesson33-34 HW Navigation";
 			sourceTree = "<group>";
 		};
 		248DEAF91B84AB30003C5D96 /* LaunchScreen.xib */ = {
