@@ -10,4 +10,7 @@
 
 @interface NSTableViewController : UITableViewController
 
+
+@property (strong,nonatomic) NSString* path;
+
 @end
